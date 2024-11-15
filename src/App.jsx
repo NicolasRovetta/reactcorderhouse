@@ -31,7 +31,7 @@ function App() {
     <>
       <div className="divCard">
         <div>
-          <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
+          <a  target="_blank" rel="noopener noreferrer">
             <img src={aireAcond} className="logo" alt="electrodoméstico" />
           </a>
         </div>
@@ -40,7 +40,7 @@ function App() {
           Cantidad: {count} <br />
           <button onClick={() => setCount((prev) => Math.max(prev - 1, 0))}>-</button>
           <button onClick={() => setCount((prev) => prev + 1)}>+</button><br />
-          <button onClick={agregarAlCarro}>Agregar al carro</button>
+          <button className="card" onClick={agregarAlCarro}>Agregar al carro</button>
         </div>
       </div>
 
